@@ -1,0 +1,405 @@
+2018-06-22 12:03:40 Notice: Deprecated (16384): RouteBuilder::extensions() is deprecated. Use RouteBuilder::setExtensions()/getExtensions() instead. - /var/www/html/cakeJWT/config/routes.php, line: 50
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Routing\RouteBuilder::extensions() - CORE/src/Routing/RouteBuilder.php, line 202
+Cake\Http\BaseApplication::{closure}() - ROOT/config/routes.php, line 50
+Cake\Routing\RouteBuilder::scope() - CORE/src/Routing/RouteBuilder.php, line 993
+Cake\Routing\Router::scope() - CORE/src/Routing/Router.php, line 1048
+Cake\Routing\Router::prefix() - CORE/src/Routing/Router.php, line 1090
+require - ROOT/config/routes.php, line 59
+Cake\Http\BaseApplication::routes() - CORE/src/Http/BaseApplication.php, line 172
+Cake\Routing\Middleware\RoutingMiddleware::prepareRouteCollection() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 110
+Cake\Routing\Middleware\RoutingMiddleware::Cake\Routing\Middleware\{closure}() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 95
+call_user_func - [internal], line ??
+Cake\Cache\Cache::remember() - CORE/src/Cache/Cache.php, line 632
+Cake\Routing\Middleware\RoutingMiddleware::buildRouteCollection() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 96
+Cake\Routing\Middleware\RoutingMiddleware::loadRoutes() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 82
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 132
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-22 12:05:09 Notice: Deprecated (16384): Use Cake\Http\Exception\UnauthorizedException instead of Cake\Network\Exception\UnauthorizedException. - /var/www/html/cakeJWT/vendor/composer/ClassLoader.php, line: 444
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 162.158.155.38
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+include - CORE/src/Network/Exception/UnauthorizedException.php, line 4
+Composer\Autoload\includeFile - ROOT/vendor/composer/ClassLoader.php, line 444
+Composer\Autoload\ClassLoader::loadClass() - ROOT/vendor/composer/ClassLoader.php, line 322
+spl_autoload_call - [internal], line ??
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 34
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:06:29 Notice: Deprecated (16384): The `scope` and `contain` options for Authentication are deprecated. Use the `finder` option instead to define additional conditions. - /var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php, line: 872
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Auth\BaseAuthenticate::__construct() - CORE/src/Auth/BaseAuthenticate.php, line 99
+Cake\Controller\Component\AuthComponent::constructAuthenticate() - CORE/src/Controller/Component/AuthComponent.php, line 872
+Cake\Controller\Component\AuthComponent::identify() - CORE/src/Controller/Component/AuthComponent.php, line 821
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 32
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:06:29 Notice: Deprecated (16384): The `scope` and `contain` options for Authentication are deprecated. Use the `finder` option instead to define additional conditions. - /var/www/html/cakeJWT/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php, line: 111
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Auth\BaseAuthenticate::__construct() - CORE/src/Auth/BaseAuthenticate.php, line 99
+ADmad\JwtAuth\Auth\JwtAuthenticate::__construct() - ROOT/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php, line 111
+Cake\Controller\Component\AuthComponent::constructAuthenticate() - CORE/src/Controller/Component/AuthComponent.php, line 872
+Cake\Controller\Component\AuthComponent::identify() - CORE/src/Controller/Component/AuthComponent.php, line 821
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 32
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:06:29 Notice: Deprecated (16384): Security::salt() is deprecated. Use Security::getSalt()/setSalt() instead. - /var/www/html/cakeJWT/src/Controller/Api/ApiController.php, line: 44
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Utility\Security::salt() - CORE/src/Utility/Security.php, line 383
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 44
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:07:04 Notice: Deprecated (16384): The `scope` and `contain` options for Authentication are deprecated. Use the `finder` option instead to define additional conditions. - /var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php, line: 872
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Auth\BaseAuthenticate::__construct() - CORE/src/Auth/BaseAuthenticate.php, line 99
+Cake\Controller\Component\AuthComponent::constructAuthenticate() - CORE/src/Controller/Component/AuthComponent.php, line 872
+Cake\Controller\Component\AuthComponent::identify() - CORE/src/Controller/Component/AuthComponent.php, line 821
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 32
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:07:04 Notice: Deprecated (16384): The `scope` and `contain` options for Authentication are deprecated. Use the `finder` option instead to define additional conditions. - /var/www/html/cakeJWT/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php, line: 111
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Auth\BaseAuthenticate::__construct() - CORE/src/Auth/BaseAuthenticate.php, line 99
+ADmad\JwtAuth\Auth\JwtAuthenticate::__construct() - ROOT/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php, line 111
+Cake\Controller\Component\AuthComponent::constructAuthenticate() - CORE/src/Controller/Component/AuthComponent.php, line 872
+Cake\Controller\Component\AuthComponent::identify() - CORE/src/Controller/Component/AuthComponent.php, line 821
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 32
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:07:04 Notice: Deprecated (16384): Security::salt() is deprecated. Use Security::getSalt()/setSalt() instead. - /var/www/html/cakeJWT/src/Controller/Api/ApiController.php, line: 39
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Utility\Security::salt() - CORE/src/Utility/Security.php, line 383
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 39
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:07:09 Notice: Deprecated (16384): The `scope` and `contain` options for Authentication are deprecated. Use the `finder` option instead to define additional conditions. - /var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php, line: 872
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Auth\BaseAuthenticate::__construct() - CORE/src/Auth/BaseAuthenticate.php, line 99
+Cake\Controller\Component\AuthComponent::constructAuthenticate() - CORE/src/Controller/Component/AuthComponent.php, line 872
+Cake\Controller\Component\AuthComponent::identify() - CORE/src/Controller/Component/AuthComponent.php, line 821
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 32
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:07:09 Notice: Deprecated (16384): The `scope` and `contain` options for Authentication are deprecated. Use the `finder` option instead to define additional conditions. - /var/www/html/cakeJWT/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php, line: 111
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Auth\BaseAuthenticate::__construct() - CORE/src/Auth/BaseAuthenticate.php, line 99
+ADmad\JwtAuth\Auth\JwtAuthenticate::__construct() - ROOT/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php, line 111
+Cake\Controller\Component\AuthComponent::constructAuthenticate() - CORE/src/Controller/Component/AuthComponent.php, line 872
+Cake\Controller\Component\AuthComponent::identify() - CORE/src/Controller/Component/AuthComponent.php, line 821
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 32
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:07:09 Notice: Deprecated (16384): Security::salt() is deprecated. Use Security::getSalt()/setSalt() instead. - /var/www/html/cakeJWT/src/Controller/Api/ApiController.php, line: 39
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Utility\Security::salt() - CORE/src/Utility/Security.php, line 383
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 39
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:07:55 Notice: Deprecated (16384): The `scope` and `contain` options for Authentication are deprecated. Use the `finder` option instead to define additional conditions. - /var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Controller/Component/AuthComponent.php, line: 872
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Auth\BaseAuthenticate::__construct() - CORE/src/Auth/BaseAuthenticate.php, line 99
+Cake\Controller\Component\AuthComponent::constructAuthenticate() - CORE/src/Controller/Component/AuthComponent.php, line 872
+Cake\Controller\Component\AuthComponent::identify() - CORE/src/Controller/Component/AuthComponent.php, line 821
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 32
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:07:55 Notice: Deprecated (16384): The `scope` and `contain` options for Authentication are deprecated. Use the `finder` option instead to define additional conditions. - /var/www/html/cakeJWT/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php, line: 111
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Auth\BaseAuthenticate::__construct() - CORE/src/Auth/BaseAuthenticate.php, line 99
+ADmad\JwtAuth\Auth\JwtAuthenticate::__construct() - ROOT/vendor/admad/cakephp-jwt-auth/src/Auth/JwtAuthenticate.php, line 111
+Cake\Controller\Component\AuthComponent::constructAuthenticate() - CORE/src/Controller/Component/AuthComponent.php, line 872
+Cake\Controller\Component\AuthComponent::identify() - CORE/src/Controller/Component/AuthComponent.php, line 821
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 32
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
+2018-06-25 12:07:55 Notice: Deprecated (16384): Security::salt() is deprecated. Use Security::getSalt()/setSalt() instead. - /var/www/html/cakeJWT/src/Controller/Api/ApiController.php, line: 39
+ You can disable deprecation warnings by setting `Error.errorLevel` to `E_ALL & ~E_USER_DEPRECATED` in your config/app.php. in [/var/www/html/cakeJWT/vendor/cakephp/cakephp/src/Core/functions.php, line 312]
+Request URL: /api/login
+Client IP: 141.101.98.130
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE/src/Error/BaseErrorHandler.php, line 159
+deprecationWarning - CORE/src/Core/functions.php, line 312
+Cake\Utility\Security::salt() - CORE/src/Utility/Security.php, line 383
+App\Controller\Api\ApiController::login() - APP/Controller/Api/ApiController.php, line 39
+Cake\Controller\Controller::invokeAction() - CORE/src/Controller/Controller.php, line 596
+Cake\Http\ActionDispatcher::_invoke() - CORE/src/Http/ActionDispatcher.php, line 120
+Cake\Http\ActionDispatcher::dispatch() - CORE/src/Http/ActionDispatcher.php, line 94
+Cake\Http\BaseApplication::__invoke() - CORE/src/Http/BaseApplication.php, line 228
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\RoutingMiddleware::__invoke() - CORE/src/Routing/Middleware/RoutingMiddleware.php, line 158
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Routing\Middleware\AssetMiddleware::__invoke() - CORE/src/Routing/Middleware/AssetMiddleware.php, line 88
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Error\Middleware\ErrorHandlerMiddleware::__invoke() - CORE/src/Error/Middleware/ErrorHandlerMiddleware.php, line 98
+Cake\Http\Runner::__invoke() - CORE/src/Http/Runner.php, line 65
+Cake\Http\Runner::run() - CORE/src/Http/Runner.php, line 51
+Cake\Http\Server::run() - CORE/src/Http/Server.php, line 98
+require - ROOT/webroot/index.php, line 40
+[main] - ROOT/index.php, line 16
+
+
+
