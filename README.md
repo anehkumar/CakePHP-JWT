@@ -1,5 +1,5 @@
 # CakePHP-JWT
-Post URL:- 
+Post URL:- https://wp.me/p4Y0GO-1ZZ
 
 Live Demo:- https://cake_jwt.trinitytuts.com/
 
